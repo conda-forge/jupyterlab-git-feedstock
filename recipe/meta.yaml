@@ -18,12 +18,12 @@ requirements:
   build:
     - nodejs
   host:
-    - jupyterlab
+    - jupyterlab >0.35.0,<1.0.0
     - pip
     - psutil
     - python >=3.5
   run:
-    - jupyterlab
+    - jupyterlab >0.35.0,<1.0.0
     - nodejs
     - psutil
     - python >=3.5
