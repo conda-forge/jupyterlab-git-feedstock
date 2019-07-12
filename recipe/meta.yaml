@@ -1,6 +1,6 @@
 {% set name = "jupyterlab-git" %}
-{% set version = "0.6.0" %}
-{% set sha256 = "83b16ee9a878fb721a55f9184c96e645a9395e496cddaf2ff47af72ef2c9b29b" %}
+{% set version = "0.6.1" %}
+{% set sha256 = "effb1215e89fbbb7d679a8e617972f8bccd961f4d975f2a2d379844286448844" %}
 
 package:
   name: {{ name|lower }}
@@ -18,12 +18,12 @@ requirements:
   build:
     - nodejs
   host:
-    - jupyterlab
+    - jupyterlab >0.35.0,<1.0.0
     - pip
     - psutil
     - python >=3.5
   run:
-    - jupyterlab
+    - jupyterlab >0.35.0,<1.0.0
     - nodejs
     - psutil
     - python >=3.5
