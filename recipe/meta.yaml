@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -20,13 +20,12 @@ requirements:
   host:
     - jupyterlab >=1.0.0
     - pip
-    - psutil
     - python >=3.5
   run:
     - jupyterlab >=1.0.0
     - nodejs
-    - psutil
     - python >=3.5
+    - nbdime >=1.1.0
 
 test:
   imports:
