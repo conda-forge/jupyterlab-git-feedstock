@@ -3,7 +3,7 @@
 {% set sha256 = "972611bf24120d9acd0261d7ea4cd6b5540fd5dd47c951b84cb60020e5d7d6d8" %}
 
 package:
-  name: {{ name|lower }}
+  name: {{ name|lower }}-server
   version: {{ version }}
 
 source:
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
 
 requirements:
@@ -23,17 +23,33 @@ requirements:
     - python >=3.5
   run:
     - jupyterlab >=1.0.0
-    - nodejs
     - python >=3.5
     - nbdime >=1.1.0
 
 test:
   imports:
     - jupyterlab_git
-  commands:
-    - jupyter labextension list
-    - jupyter lab build
 
+outputs:
+  - name: {{ name|lower }}-server
+
+  - name: {{ name|lower }}
+    requirements:
+      host:
+        - jupyterlab >=1.0.0
+        - python >=3.5
+      run:
+        - python >=3.5
+        - nodejs
+        - {{ pin_subpackage('jupyterlab-git-server', exact=True) }}
+    test:
+      imports:
+        - jupyterlab_git
+      commands:
+        - jupyter labextension list
+        - jupyter lab build
+  
+  
 about:
   home: https://github.com/jupyterlab/jupyterlab-git
   license: BSD 3-Clause
