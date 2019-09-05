@@ -16,8 +16,6 @@ build:
   script: {{PYTHON}} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
-  build:
-    - nodejs
   host:
     - jupyterlab >=1.0.0
     - pip
@@ -42,6 +40,8 @@ outputs:
     script: install-lab.bat  # [win]
     script: install-lab.sh  # [not win]
     requirements:
+      build:
+        - nodejs    
       host:
         - jupyterlab >=1.0.0
         - python >=3.5
