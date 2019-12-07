@@ -1,31 +1,30 @@
 {% set name = "jupyterlab-git" %}
-{% set version = "0.8.2" %}
-{% set sha256 = "e2605587761c139fa175bdea55b5fe590e5d465bc0405034583b5a199c7562be" %}
+{% set version = "0.9.0" %}
+{% set sha256 = "3f7867b9ebfb68ff68ef1ccbbe3cd9449f45fa5001471d1e3a67322a78e27832" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/jupyterlab/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/j/jupyterlab_git/jupyterlab_git-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   number: 0
   noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
-  build:
-    - nodejs
   host:
-    - jupyterlab >=1.0.0
     - pip
     - python >=3.5
   run:
-    - jupyterlab >=1.0.0
-    - nodejs
+    - jupyterlab >=1.1.0
     - python >=3.5
     - nbdime >=1.1.0
+    - nodejs
+    - pexpect
 
 test:
   imports:
