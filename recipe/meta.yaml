@@ -20,9 +20,9 @@ requirements:
     - pip
     - python >=3.5
   run:
-    - jupyterlab >=1.1.0
+    - jupyterlab >=2.0.0
     - python >=3.5
-    - nbdime >=1.1.0
+    - nbdime >=2.0.0
     - nodejs
     - pexpect
 
@@ -46,3 +46,4 @@ extra:
   recipe-maintainers:
     - dbast
     - blink1073
+    - fcollonval
