@@ -3,7 +3,7 @@ About jupyterlab-git
 
 Home: https://github.com/jupyterlab/jupyterlab-git
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
