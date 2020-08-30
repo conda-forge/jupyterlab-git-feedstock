@@ -5,7 +5,7 @@ Home: https://github.com/jupyterlab/jupyterlab-git
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A Git extension for JupyterLab
 
@@ -118,4 +118,5 @@ Feedstock Maintainers
 
 * [@blink1073](https://github.com/blink1073/)
 * [@dbast](https://github.com/dbast/)
+* [@fcollonval](https://github.com/fcollonval/)
 
