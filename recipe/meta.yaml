@@ -1,6 +1,6 @@
 {% set name = "jupyterlab-git" %}
-{% set version = "0.20.0" %}
-{% set sha256 = "b190276b1e89627e20ad688c85851d662787e33bb9a3643eed07681a59e64363" %}
+{% set version = "0.21.0" %}
+{% set sha256 = "72dba635acf13012d6e7b0c9fba9ad8907b0d7c9e31be91d0045f70616313b63" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
@@ -24,6 +24,7 @@ requirements:
     - python >=3.5
     - nbdime >=2.0.0
     - nodejs
+    - packaging
     - pexpect
 
 test:
