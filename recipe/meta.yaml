@@ -28,9 +28,12 @@ requirements:
     - pexpect
 
 test:
+  requires:
+    - pip
   imports:
     - jupyterlab_git
   commands:
+    - pip check
     - jupyter labextension list
     - jupyter lab build
 
