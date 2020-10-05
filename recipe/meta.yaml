@@ -11,18 +11,18 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python >=3.6,<4.0
   run:
-    - jupyterlab >=2.0.0
-    - python >=3.5
-    - nbdime >=2.0.0
+    - jupyterlab >=2.0.0,<3.0.0
+    - python >=3.6,<4.0
+    - nbdime >=2.0.0,<3.0.0
     - nodejs
     - packaging
     - pexpect
