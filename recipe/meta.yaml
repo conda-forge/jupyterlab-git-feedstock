@@ -13,17 +13,19 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --install-option="--skip-npm" -vv
 
 requirements:
   host:
     - pip
     - python >=3.6,<4.0
+    - jupyterlab =3
+    - jupyter_packaging =0.7
   run:
-    - jupyterlab >=2.0.0,<3.0.0
+    - jupyterlab =3
     - python >=3.6,<4.0
-    - nbdime >=2.0.0,<3.0.0
-    - nodejs
+    - nbdime =3
+    - nbformat
     - packaging
     - pexpect
 
@@ -34,8 +36,10 @@ test:
     - jupyterlab_git
   commands:
     - pip check
+    - jupyter server extension list
+    - jupyter server extension list 2>&1 | grep -ie "jupyterlab_git.*OK"
     - jupyter labextension list
-    - jupyter lab build
+    - jupyter labextension list 2>&1 | grep -ie "@jupyterlab/git.*OK.*(python, jupyterlab-git)"
 
 about:
   home: https://github.com/jupyterlab/jupyterlab-git
