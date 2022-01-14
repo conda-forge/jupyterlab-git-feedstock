@@ -1,6 +1,6 @@
 {% set name = "jupyterlab-git" %}
-{% set version = "0.34.1" %}
-{% set sha256 = "c7a03f526eb19175df73fedd5dee3cdae2d39e0474eef8f55c1c55b219ab26d9" %}
+{% set version = "0.34.2" %}
+{% set sha256 = "58d061b87177ae10166440f8762f41f4ba2afac851ce926e68038e70d0f56041" %}
 
 package:
   name: {{ name|lower }}
