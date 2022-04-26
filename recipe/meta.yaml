@@ -1,6 +1,6 @@
 {% set name = "jupyterlab-git" %}
-{% set version = "0.36.0" %}
-{% set sha256 = "2be875adaf4fb2a2a54923e77358e048e0c80afdc5a04770a8119859062ceb01" %}
+{% set version = "0.37.0" %}
+{% set sha256 = "e43c3d652078b09b6fc57d1f91a9bcc1086375e9080a197719463579f8716471" %}
 
 package:
   name: {{ name|lower }}
@@ -22,9 +22,9 @@ requirements:
     - jupyterlab =3
     - jupyter-packaging =0.7
   run:
-    - jupyterlab =3
+    - jupyter_server >=1.0,<2.0
     - python >=3.6,<4.0
-    - nbdime =3
+    - nbdime >=3.1,<4.0
     - nbformat
     - packaging
     - pexpect
