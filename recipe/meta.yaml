@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --install-option="--skip-npm" -vv
 
@@ -22,12 +22,13 @@ requirements:
     - jupyterlab =3
     - jupyter-packaging =0.7
   run:
-    - jupyter_server >=1.0,<2.0
+    - jupyter_server >=1.0,<3.0
     - python >=3.6,<4.0
     - nbdime >=3.1,<4.0
     - nbformat
     - packaging
     - pexpect
+    - traitlets >=5.0,<6.0
 
 test:
   requires:
