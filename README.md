@@ -1,11 +1,11 @@
-About jupyterlab-git
-====================
+About jupyterlab-git-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-git-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyterlab/jupyterlab-git
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-git-feedstock/blob/main/LICENSE.txt)
 
 Summary: A Git extension for JupyterLab
 
