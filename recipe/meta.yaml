@@ -1,6 +1,6 @@
 {% set name = "jupyterlab-git" %}
-{% set version = "0.41.0" %}
-{% set sha256 = "51767daa002f08a7cf0b372114eb706eff2f34f12d70b5347700464e6887483e" %}
+{% set version = "0.42.0" %}
+{% set sha256 = "1859e8c7a2a7c0a585aac516634418ccc4a15e51fd285498deb4490384408829" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --install-option="--skip-npm" -vv
 
