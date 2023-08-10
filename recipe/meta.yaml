@@ -13,14 +13,16 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps --install-option="--skip-npm" -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - pip <23.1.0
-    - python >=3.6,<4.0
+    - hatch-jupyter-builder >=0.5
+    - hatch-nodejs-version
+    - hatchling >=1.5.0
     - jupyterlab =3
-    - jupyter-packaging =0.7
+    - pip
+    - python >=3.6,<4.0
   run:
     - jupyter_server >=1.0,<3.0
     - jupyterlab <4.0
