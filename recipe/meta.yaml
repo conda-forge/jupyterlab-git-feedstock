@@ -32,7 +32,7 @@ requirements:
     - pexpect
     - traitlets >=5.0,<6.0
   run_constrained:
-    - jupyterlab >=4.0
+    - jupyterlab >=4,<5
 
 test:
   requires:
