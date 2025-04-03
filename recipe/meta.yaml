@@ -59,6 +59,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - krassowski
     - dbast
     - blink1073
     - fcollonval
