@@ -59,6 +59,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - jtpio
     - krassowski
     - dlqqq
     - dbast
