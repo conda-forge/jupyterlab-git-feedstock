@@ -20,7 +20,7 @@ outputs:
   - name: jupyterlab-git-core
     build:
       noarch: python
-      script: cd core && {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+      script: cd core && $PYTHON -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
     requirements:
       host:
         - hatch-jupyter-builder >=0.5
@@ -56,7 +56,7 @@ outputs:
   - name: jupyterlab-git
     build:
       noarch: python
-      script: cd jupyterlab && {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+      script: cd jupyterlab && $PYTHON -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
     requirements:
       host:
         - hatch-nodejs-version >=0.3.2
