@@ -1,7 +1,11 @@
-About jupyterlab-git-feedstock
-==============================
+About jupyterlab-git-split-feedstock
+====================================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-git-feedstock/blob/main/LICENSE.txt)
+
+
+About jupyterlab-git-split
+--------------------------
 
 Home: https://github.com/jupyterlab/jupyterlab-git
 
@@ -13,15 +17,28 @@ Development: https://github.com/jupyterlab/jupyterlab-git
 
 A JupyterLab extension for version control using git
 
+About jupyterlab-git
+--------------------
+
+
+
+Package license: 
+
+About jupyterlab-git-core
+-------------------------
+
+
+
+Package license: 
+
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3053&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jupyterlab-git-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -32,27 +49,28 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab--git-green.svg)](https://anaconda.org/conda-forge/jupyterlab-git) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab-git.svg)](https://anaconda.org/conda-forge/jupyterlab-git) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-git.svg)](https://anaconda.org/conda-forge/jupyterlab-git) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab-git.svg)](https://anaconda.org/conda-forge/jupyterlab-git) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab--git--core-green.svg)](https://anaconda.org/conda-forge/jupyterlab-git-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab-git-core.svg)](https://anaconda.org/conda-forge/jupyterlab-git-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-git-core.svg)](https://anaconda.org/conda-forge/jupyterlab-git-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab-git-core.svg)](https://anaconda.org/conda-forge/jupyterlab-git-core) |
 
-Installing jupyterlab-git
-=========================
+Installing jupyterlab-git-split
+===============================
 
-Installing `jupyterlab-git` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `jupyterlab-git-split` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `jupyterlab-git` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `jupyterlab-git, jupyterlab-git-core` can be installed with `conda`:
 
 ```
-conda install jupyterlab-git
+conda install jupyterlab-git jupyterlab-git-core
 ```
 
 or with `mamba`:
 
 ```
-mamba install jupyterlab-git
+mamba install jupyterlab-git jupyterlab-git-core
 ```
 
 It is possible to list all of the versions of `jupyterlab-git` available on your platform with `conda`:
@@ -122,17 +140,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating jupyterlab-git-feedstock
-=================================
+Updating jupyterlab-git-split-feedstock
+=======================================
 
-If you would like to improve the jupyterlab-git recipe or build a new
+If you would like to improve the jupyterlab-git-split recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/jupyterlab-git-feedstock are
+Note that all branches in the conda-forge/jupyterlab-git-split-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.
