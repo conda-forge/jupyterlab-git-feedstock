@@ -44,9 +44,10 @@ outputs:
         - pexpect
         - python >=${{ python_min }}
         - traitlets >=5.0,<6.0
+        # [nbdime]
+        - nbdime >=4.0.1,<4.1
       run_constraints:
         - jupyterlab >=4,<5
-        - nbdime >=4.0.1,<4.1
         # avoid installing clobbering jupyterlab-git<0.53
         - jupyterlab-git ${{ version }}.*
     tests:
