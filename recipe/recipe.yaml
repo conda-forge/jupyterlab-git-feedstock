@@ -119,6 +119,7 @@ about:
   repository: https://github.com/jupyterlab/jupyterlab-git
 
 extra:
+  feedstock-name: jupyterlab-git
   recipe-maintainers:
     - jtpio
     - krassowski
