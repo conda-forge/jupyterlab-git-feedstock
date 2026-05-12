@@ -165,6 +165,7 @@ Feedstock Maintainers
 =====================
 
 * [@blink1073](https://github.com/blink1073/)
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@dbast](https://github.com/dbast/)
 * [@dlqqq](https://github.com/dlqqq/)
 * [@fcollonval](https://github.com/fcollonval/)
