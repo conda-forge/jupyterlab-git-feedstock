@@ -3,7 +3,11 @@ About jupyterlab-git-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jupyterlab-git-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/jupyterlab/jupyterlab-git
+
+About jupyterlab-git
+--------------------
+
+Home: https://pypi.org/project/jupyterlab-git
 
 Package license: BSD-3-Clause
 
@@ -13,15 +17,27 @@ Development: https://github.com/jupyterlab/jupyterlab-git
 
 A JupyterLab extension for version control using git
 
+About jupyterlab-git-core
+-------------------------
+
+Home: https://pypi.org/project/jupyterlab-git-core
+
+Package license: BSD-3-Clause
+
+Summary: A Git extension for JupyterLab
+
+Development: https://github.com/jupyterlab/jupyterlab-git
+
+Core Git operations library for the jupyterlab-git JupyterLab extension.
+
 Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3053&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jupyterlab-git-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
@@ -32,6 +48,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab--git-green.svg)](https://anaconda.org/conda-forge/jupyterlab-git) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab-git.svg)](https://anaconda.org/conda-forge/jupyterlab-git) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-git.svg)](https://anaconda.org/conda-forge/jupyterlab-git) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab-git.svg)](https://anaconda.org/conda-forge/jupyterlab-git) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-jupyterlab--git--core-green.svg)](https://anaconda.org/conda-forge/jupyterlab-git-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/jupyterlab-git-core.svg)](https://anaconda.org/conda-forge/jupyterlab-git-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/jupyterlab-git-core.svg)](https://anaconda.org/conda-forge/jupyterlab-git-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/jupyterlab-git-core.svg)](https://anaconda.org/conda-forge/jupyterlab-git-core) |
 
 Installing jupyterlab-git
 =========================
@@ -43,16 +60,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `jupyterlab-git` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `jupyterlab-git, jupyterlab-git-core` can be installed with `conda`:
 
 ```
-conda install jupyterlab-git
+conda install jupyterlab-git jupyterlab-git-core
 ```
 
 or with `mamba`:
 
 ```
-mamba install jupyterlab-git
+mamba install jupyterlab-git jupyterlab-git-core
 ```
 
 It is possible to list all of the versions of `jupyterlab-git` available on your platform with `conda`:
@@ -148,6 +165,7 @@ Feedstock Maintainers
 =====================
 
 * [@blink1073](https://github.com/blink1073/)
+* [@bollwyvl](https://github.com/bollwyvl/)
 * [@dbast](https://github.com/dbast/)
 * [@dlqqq](https://github.com/dlqqq/)
 * [@fcollonval](https://github.com/fcollonval/)
