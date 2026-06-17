@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.53.0"
+  version: "0.54.0"
   python_check_max: "3.14"
   grep: ${{ "grep -iE" if unix else "findstr /c" }}
 
@@ -12,10 +12,10 @@ recipe:
 
 source:
   - url: https://pypi.org/packages/source/j/jupyterlab-git-core/jupyterlab_git_core-${{ version }}.tar.gz
-    sha256: a4c4c104eb8f7e62fdc05449834e0b56f3d6b6df30c769ceae52e4001fcbf9e1
+    sha256: 5ce935fc0ac42d908f57def7e74df506c3a8049e1365d158721bd5ec2076fe87
     target_directory: core
   - url: https://pypi.org/packages/source/j/jupyterlab-git/jupyterlab_git-${{ version }}.tar.gz
-    sha256: 121f0e0bbf637feaed5893d68ca741fd99ae6f7735ab7ef5db230d6da5d19d98
+    sha256: 4d0b46d3d17376a5c610633a2191868f577f46341e112dc9dece1f501cd46b65
     target_directory: jupyterlab
 
 build:
